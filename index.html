@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>isi — помощь с рутиной для небольших бизнесов в Варшаве</title>
+<title>isi — вы отдыхаете, таблица считает · Варшава</title>
 <meta name="description" content="Я Дарья, настраиваю простые Telegram-боты и Google Таблицы для небольших бизнесов в Варшаве: заказы, чеки и зарплаты считаются сами.">
-<meta name="theme-color" content="#faf6f0">
+<meta name="theme-color" content="#f4efe7">
 <meta property="og:title" content="isi — заказы, чеки и зарплаты считаются сами">
 <meta property="og:description" content="Простые Telegram-боты и Google Таблицы для небольших бизнесов в Варшаве.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23b84a33'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='white' text-anchor='middle'%3Eisi%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d6287f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='white' text-anchor='middle'%3Eisi%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Manrope:wght@400;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -40,15 +40,21 @@
 <main>
   <!-- 1. Hero -->
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
+    <div class="wrap">
+      <div class="postcard">
         <p class="kicker">isi · <span data-i18n="city">Варшава</span></p>
-        <h1 data-i18n="heroTitle">Пусть заказы, чеки и зарплаты считаются сами</h1>
-        <p class="sub" data-i18n="heroSub">Я Дарья, живу в Варшаве и настраиваю простые Telegram-боты и Google Таблицы для небольших бизнесов. Чтобы вам не приходилось сидеть по вечерам с калькулятором и тетрадкой.</p>
+        <h1><span data-i18n="heroT1">Вы отдыхаете.</span> <span class="pink" data-i18n="heroT2">Таблица считает.</span></h1>
+        <span class="sticker" data-i18n="heroTag">#без_рутины</span>
+        <p class="sub" data-i18n="heroSub">Я Дарья, живу в Варшаве. Настраиваю Telegram-ботов и Google Таблицы для небольших бизнесов, чтобы заказы, чеки и зарплаты считались без вас.</p>
         <a class="btn" href="https://t.me/samuraeessa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg><span data-i18n="cta">Написать мне в Telegram</span></a>
         <p class="hero-note" data-i18n="heroNote">Можно просто спросить. Первый разговор бесплатный и ни к чему не обязывает.</p>
+        <svg class="mountains" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
+          <path fill="rgba(255,255,255,.35)" d="M0 150 L120 95 L210 130 L330 40 L430 110 L520 70 L640 135 L760 30 L880 115 L980 75 L1100 120 L1200 85 L1200 220 L0 220Z"/>
+          <path fill="rgba(255,255,255,.55)" d="M0 180 L150 120 L260 160 L400 100 L540 165 L700 110 L820 170 L960 125 L1080 165 L1200 130 L1200 220 L0 220Z"/>
+          <path fill="#f4efe7" d="M0 205 L200 180 L420 200 L640 178 L860 202 L1040 185 L1200 198 L1200 220 L0 220Z"/>
+        </svg>
       </div>
-      <aside class="who">
+      <aside class="who reveal">
         <p class="who-title" data-i18n="whoTitle">С кем я работаю</p>
         <div class="chips">
           <span class="chip" data-i18n="chip1">кухни и meal-prep</span>
@@ -66,6 +72,7 @@
   <section class="section" id="pains" style="padding-top:24px">
     <div class="wrap">
       <div class="section-head reveal">
+        <span class="tag" data-i18n="tag1">#знакомо</span>
         <h2 class="h2" data-i18n="painsTitle">Узнаёте себя?</h2>
       </div>
       <div class="grid grid-2">
@@ -74,7 +81,7 @@
         <div class="quote reveal"><p data-i18n="pq3">Клиентка просила без лука. Повар об этом не знал.</p></div>
         <div class="quote reveal"><p data-i18n="pq4">Чеки фотографируют и кидают в чат. Сколько мы потратили за месяц? Понятия не имею.</p></div>
       </div>
-      <p class="pains-foot reveal" data-i18n="painsFoot">Так обычно бывает, когда дело растёт быстрее, чем порядок в нём. Хорошая новость: это можно наладить без сложных программ.</p>
+      <p class="pains-foot reveal" data-i18n="painsFoot">Так обычно бывает, когда дело растёт быстрее, чем порядок в нём. Выдохните: это можно наладить без сложных программ.</p>
     </div>
   </section>
 
@@ -82,7 +89,8 @@
   <section class="section" id="services" style="padding-top:0">
     <div class="wrap">
       <div class="section-head reveal">
-        <h2 class="h2" data-i18n="servTitle">Что я могу для вас сделать</h2>
+        <span class="tag" data-i18n="tag2">#что_я_делаю</span>
+        <h2 class="h2" data-i18n="servTitle">Что я делаю, пока вы отдыхаете</h2>
         <p class="lead" data-i18n="servSub">Ничего не нужно устанавливать и учиться программированию. Всё работает в Telegram и Google Таблицах.</p>
       </div>
       <div class="grid grid-3">
@@ -124,7 +132,7 @@
   <section class="section" id="about" style="padding-top:0">
     <div class="wrap">
       <div class="about reveal">
-        <div class="about-photo" aria-hidden="true" data-i18n="initial">Д</div>
+        <div class="about-photo" aria-hidden="true"><span data-i18n="initial">Д</span><span class="badge" data-i18n="badge">на чилле 🎧</span></div>
         <div>
           <h2 class="h2" data-i18n="aboutTitle">Немного обо мне</h2>
           <p data-i18n="about1">Меня зовут Дарья. Я живу в Варшаве и всё делаю сама: от первого разговора до настройки и поддержки. Вы общаетесь напрямую со мной, а не с менеджером.</p>
@@ -139,7 +147,8 @@
     <div class="wrap">
       <div class="case">
         <div class="section-head reveal">
-          <h2 class="h2" data-i18n="caseTitle">Как это работает на одной кухне</h2>
+          <span class="tag" data-i18n="tag3">#реальный_кейс</span>
+        <h2 class="h2" data-i18n="caseTitle">Как это работает на одной кухне</h2>
           <p class="lead" data-i18n="caseSub">Кухня готовит meal-prep, в команде 6 человек.</p>
         </div>
         <div class="case-steps">
@@ -156,7 +165,9 @@
   <section class="section" id="process" style="padding-top:0">
     <div class="wrap">
       <div class="section-head reveal">
+        <span class="tag" data-i18n="tag4">#без_стресса</span>
         <h2 class="h2" data-i18n="procTitle">Как всё будет</h2>
+        <p class="lead" data-i18n="procSub">Спойлер: спокойно.</p>
       </div>
       <div class="steps">
         <div class="card step reveal"><h3 data-i18n="pr1t">Созваниваемся</h3><p data-i18n="pr1d">Вы рассказываете, как проходит обычный день и что больше всего утомляет. Этот разговор бесплатный.</p></div>
@@ -171,6 +182,7 @@
   <section class="section" id="faq" style="padding-top:0">
     <div class="wrap">
       <div class="section-head reveal">
+        <span class="tag" data-i18n="tag5">#вопросы</span>
         <h2 class="h2" data-i18n="faqTitle">Что меня часто спрашивают</h2>
       </div>
       <div class="faq">
@@ -187,9 +199,9 @@
   <section class="section" style="padding-top:0">
     <div class="wrap">
       <div class="final reveal">
-        <h2 class="h2" data-i18n="finalTitle">Напишите, даже если пока не уверены</h2>
+        <h2 class="h2" data-i18n="finalTitle">Выдохните и напишите мне</h2>
         <p class="lead" data-i18n="finalSub">Расскажите, что у вас происходит, а я подскажу, можно ли это упростить. Без давления и обязательств.</p>
-        <a class="btn" href="https://t.me/samuraeessa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg><span data-i18n="cta">Написать мне в Telegram</span></a>
+        <a class="btn btn-dark" href="https://t.me/samuraeessa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg><span data-i18n="cta">Написать мне в Telegram</span></a>
       </div>
     </div>
   </section>
@@ -197,7 +209,7 @@
 
 <footer class="footer">
   <div class="wrap">
-    <span>© <span id="year">2026</span> isi · <span data-i18n="footer">Дарья, Варшава</span></span>
+    <span>© <span id="year">2026</span> isi · <span data-i18n="footer">Дарья, Варшава · сохраняйте спокойствие</span></span>
     <a href="https://t.me/samuraeessa" target="_blank" rel="noopener">t.me/samuraeessa</a>
   </div>
 </footer>
